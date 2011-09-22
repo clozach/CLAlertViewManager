@@ -101,7 +101,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CLAlertViewManager)
                 self.completionBlocks = [NSMutableDictionary dictionary];
             }
             
-            [self.completionBlocks setObject:completionBlock forKey:alertId];
+            [self.completionBlocks setObject:[completionBlock copy] forKey:alertId];
         }
     }
 }
